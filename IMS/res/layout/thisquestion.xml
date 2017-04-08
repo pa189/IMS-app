@@ -1,0 +1,149 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D8D8D8" >
+   <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:paddingLeft="5dp"
+    android:background="#D8D8D8"
+     >
+     
+    <ImageView android:src="@drawable/ims_logo"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:clickable="false"
+      
+        android:contentDescription="@string/app_name" />
+    
+    
+    <LinearLayout android:layout_width="240dp"
+    android:layout_height="40dp"
+    android:orientation="vertical"
+    
+    
+    >
+   <TextView android:id="@+id/user"
+       
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:textSize="15sp"
+       
+       
+        android:paddingTop="10dp"
+        android:clickable="false"
+        android:layout_gravity="right"
+       />
+  </LinearLayout>
+</LinearLayout>
+<View
+             android:layout_width="fill_parent"
+             android:layout_height="2.5dp"
+             android:background="#ffffff"
+             android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"/>
+ <ScrollView android:layout_height="match_parent"
+       android:layout_width="match_parent"
+       >
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:orientation="vertical"
+   android:background="#ffffff"
+   android:layout_margin="10dp"
+   android:padding="10dp"
+   >
+
+   <TextView
+       android:id="@+id/ques"
+       android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+
+    android:textStyle="bold"
+     android:textSize="15sp" />
+<ImageView android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_marginTop="5dp"
+    android:id="@+id/quesimg"
+    android:layout_marginLeft="5dp"
+   
+    android:visibility="gone"
+    android:contentDescription="@string/app_name"/>
+   </LinearLayout>
+  
+   <LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:orientation="vertical"
+   android:background="#ffffff"
+   android:layout_margin="10dp"
+   android:padding="10dp"
+   >
+   <EditText
+       android:id="@+id/sub"
+       android:layout_width="fill_parent"
+       android:layout_height="75dp"
+      
+      android:inputType="textMultiLine"
+      
+       />
+  <LinearLayout android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:layout_marginTop="5dp"
+      android:layout_marginLeft="5dp"
+       android:visibility="gone"
+       android:orientation="horizontal"
+       android:id="@+id/imgbar" >
+  <ImageView android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:id="@+id/subimg"
+    android:contentDescription="@string/app_name"/>
+  <ImageButton android:layout_width="50dp"
+    android:layout_height="50dp"
+   android:layout_marginLeft="10dp"
+   android:background="@drawable/cross"
+   android:id="@+id/cross"
+    android:contentDescription="@string/app_name"/>
+  </LinearLayout>
+  <View
+             android:layout_width="fill_parent"
+             android:layout_height="1dp"
+             android:background="#D8D8D8"
+             android:layout_marginTop="8dp"
+             android:layout_marginLeft="2dp"
+             android:layout_marginRight="2dp"/>
+  <RelativeLayout android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      >
+  <Button android:layout_width="20dp"
+      android:layout_height="20dp"
+      android:padding="5dp"
+      android:background="@drawable/attach"
+      android:id="@+id/addImg"/>
+  <TextView android:layout_width="30dp"
+      android:layout_height="20dp"
+     
+    
+      android:textColor="#A4A4A4"
+      android:id="@+id/im"
+      android:layout_below="@+id/addImg"/>
+       <Button 
+           android:textColor="#A4A4A4"
+           android:background="#ffffff"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+          android:layout_marginLeft="15dp"
+         
+          android:layout_toRightOf="@+id/addImg"
+           android:id="@+id/submit"/>
+ </RelativeLayout>
+</LinearLayout>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>
+ 

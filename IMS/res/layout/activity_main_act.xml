@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+   <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:paddingLeft="5dp"
+    android:background="#D8D8D8"
+     >
+     
+    <ImageView android:src="@drawable/ims_logo"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:clickable="false"
+      
+        android:contentDescription="@string/app_name" />
+    
+    
+    <LinearLayout android:layout_width="240dp"
+    android:layout_height="40dp"
+    android:orientation="vertical"
+    
+    
+    >
+   <TextView android:id="@+id/user"
+       
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:clickable="false"
+        android:layout_gravity="right"
+       />
+  </LinearLayout>
+</LinearLayout>
+<ScrollView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       >
+<LinearLayout android:layout_width="fill_parent"
+    android:layout_height="500dp"
+    android:orientation="vertical"
+    android:padding="20dp"
+   >
+
+    
+
+<TextView android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/sendto" />
+   <TextView
+       android:id="@+id/email"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:background="#D8D8D8"
+      />
+
+   
+   <TextView android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/subhead" />
+   
+   <EditText
+       android:id="@+id/sub"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+      android:inputType="textMultiLine"
+       android:background="#D8D8D8"
+       />
+   <TextView android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/msghead" />
+   
+   <EditText
+       android:id="@+id/msg"
+       android:layout_width="fill_parent"
+       android:layout_height="100dp"
+      android:inputType="textMultiLine"
+       android:background="#D8D8D8"
+       />
+  
+   </LinearLayout>
+   </ScrollView>
+   <LinearLayout android:layout_width="fill_parent"
+       android:layout_height="150dp"
+       android:background="#FFFFFF"
+       android:paddingTop="30dp"
+       android:orientation="vertical">
+       <Button android:background="@drawable/send"
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+          android:layout_gravity="center"
+           android:id="@+id/send"/>
+   </LinearLayout>
+</LinearLayout>
+ 

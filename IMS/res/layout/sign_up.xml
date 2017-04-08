@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+     <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:paddingLeft="5dp"
+    android:background="#D8D8D8"
+   
+     >
+    <ImageView android:src="@drawable/ims_logo"
+        android:layout_width="70dp"
+        android:layout_height="40dp"     
+        android:contentDescription="@string/app_name"
+         />
+   
+</LinearLayout>
+
+<LinearLayout  android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/mathematics"
+   >
+  <ScrollView android:layout_width="match_parent"
+      android:layout_height="280dp"
+      >
+  <LinearLayout android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      android:padding="10dp"
+      android:layout_marginTop="60dp"
+      android:background="#ffffff"
+      android:inputType="text" 
+       />
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+    
+      android:background="#ffffff"
+        android:inputType="textPassword"
+        />
+   
+
+    <EditText
+        android:id="@+id/et3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+    
+      android:background="#ffffff"
+        android:inputType="textPersonName"
+        />
+   
+    <EditText
+        android:id="@+id/et4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+    
+      android:background="#ffffff"
+        android:inputType="textPostalAddress"
+        />
+  
+
+    <EditText
+        android:id="@+id/et5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+    
+      android:background="#ffffff"
+        android:inputType="phone"
+        />
+   
+
+    <EditText
+        android:id="@+id/et6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+    
+      android:background="#ffffff"
+        android:inputType="textEmailAddress"
+        />
+   
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       
+        />
+    
+    <EditText
+        android:id="@+id/et7"
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+    
+      android:background="#ffffff"
+        android:inputType="text"
+        />
+  </LinearLayout>
+  </ScrollView>
+    <Button
+        android:id="@+id/sign"
+       android:layout_width="match_parent"
+        android:layout_height="30dp"
+      android:textStyle="bold"
+       android:textColor="#ffffff"
+   
+     android:layout_marginTop="30dp"
+     android:textAlignment="center"
+      android:background="#01DFD7"
+      
+         />
+
+</LinearLayout>
+
+</LinearLayout>

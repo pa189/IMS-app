@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+     
+       <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+   
+     android:background="#D8D8D8"
+     >
+      <Button android:background="@drawable/sliding1"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:contentDescription="@string/app_name"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/slide" />
+    <ImageView android:src="@drawable/ims_logo"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:clickable="false"
+      android:layout_marginLeft="5dp"
+        android:contentDescription="@string/app_name" />
+  
+</LinearLayout>
+
+
+ <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     android:layout_marginTop="40dp" >
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#ffffff" >
+
+                   <ListView
+                android:id="@+id/lvExp"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:divider="#000000"
+              android:dividerHeight="2dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                     android:orientation="vertical"
+                     android:background="#ffffff" >
+                      <ListView
+                android:id="@+id/lvExp2"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:divider="#000000"
+              android:dividerHeight="2dp"/>
+                    
+                </LinearLayout>
+
+               
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>
+
+ </FrameLayout>
+ <LinearLayout android:layout_width="240dp"
+     android:layout_height="match_parent"
+     android:orientation="vertical"
+     android:layout_gravity="start">
+ <LinearLayout android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="vertical"
+    android:id="@+id/helll"
+    android:background="@drawable/mathematics"
+    >
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:id="@+id/user"
+        android:textStyle="bold"
+       android:layout_marginTop="5dp"
+       android:layout_marginLeft="10dp"
+       android:textSize="15sp"
+        />
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+         android:id="@+id/name"
+        android:textStyle="bold"
+        android:textSize="18sp"
+       android:layout_marginTop="50dp"
+       android:layout_marginLeft="10dp"
+        />
+    
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+         android:id="@+id/totsub"
+        android:textStyle="bold"
+       android:layout_marginTop="2dp"
+       android:layout_marginLeft="10dp"
+        />
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+         android:id="@+id/corsub"
+        android:textStyle="bold"
+       android:layout_marginTop="2dp"
+       android:layout_marginLeft="10dp"
+        />
+    </LinearLayout>
+    
+ <ListView android:id="@+id/left_drawer"
+        android:layout_width="match_parent"
+       
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="#000000"
+        android:dividerHeight="1dp"
+        android:background="#ffffff"/>
+</LinearLayout>
+</android.support.v4.widget.DrawerLayout>
+ 
+    

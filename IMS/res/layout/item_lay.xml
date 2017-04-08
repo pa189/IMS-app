@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ques"
+        android:textSize="15sp"
+       android:textColor="#0040FF"
+        android:layout_marginLeft="15dp"
+        android:textStyle="bold"
+       
+        />
+<LinearLayout android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="10dp">
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tag"
+       android:background="#585858"
+       android:textColor="#ffffff"
+      
+        android:padding="3dp"
+        android:textSize="12sp"
+        android:layout_marginLeft="15dp"
+       />
+     <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/no_sub"
+       android:textColor="#A4A4A4"
+        android:padding="3dp"
+        android:textSize="12sp"
+        android:layout_marginLeft="5dp"
+       />
+     <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+     android:textColor="#A4A4A4"
+        android:padding="3dp"
+        android:textSize="12sp"
+        android:layout_marginLeft="5dp"
+       />
+</LinearLayout>
+</LinearLayout>
